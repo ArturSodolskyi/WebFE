@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root {
+            --table-border-color: #9E9E9E;
+            --first-row-color: #498f8f;
+            --second-row-color: #f5f549;
+        }
+        table {
+            position: relative;
+            border-collapse: collapse;
+            color: #EB8150;
+        }
+        td {
+            border: 2px inset var(--table-border-color);
+            width: 50px;
+            height: 50px;
+            font-size: 100%;
+        }
+        tr {
+            border: 2px ridge var(--table-border-color);
+        }
+        .first-row {
+            background-color: var(--first-row-color) ;
+        }
+        .second-row {
+            background-color: var(--second-row-color);
+        }
+        .first-row:hover {
+            background-color: var(--second-row-color) ;
+        }
+        .second-row:hover {
+            background-color: var(--first-row-color);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laba 2.1</title>
+</head>
+<body>
+    <table width="400" height="200">
+        <tr class="first-row">
+            <td colspan="4" rowspan="2" style="height: 100px; width: 50%;">Содольський</td>
+            <td colspan="4">Артур Миколайович</td>
+        </tr>      
+        <tr class="second-row">
+            <td colspan="2" rowspan="2">ІТ-94</td>
+            <td rowspan="3" style="width: 12.5%">ЛР-2</td>
+            <td rowspan="3" style="width: 12.5%">Варіант 9</td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </table>
+    <div class="japan-flag"></div>
+</body>
+</html>
